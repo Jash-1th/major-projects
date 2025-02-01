@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg bg-body-light sticky-top border-bottom ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/listings"><i class="fa-regular fa-compass"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          
+          <a class="nav-link active" href="/listings">Explore</a>
+        
+          
+        </div>
+        <form class="d-flex ms-auto " method="get" action="/listings/countryBased"  novalidate class="needs-validation" enctype="application/x-www-form-urlencoded">
+          <input class="form-control search-input me-2" type="search" name="country" placeholder="Search on Countries" required>
+          
+          <div class="valid-feedback">Country should be eneterd</div>
+          
+          <button class="btn btn-form btn-search "> <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div><div class="serach">Search</div> </button>
+        </form>
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link" href="/listings/new">Airbnb your Home</a>
+          <%if(!currUser){ %>
+            <a class="nav-link " aria-current="page" href="/user/signUp"> <b>signUp</b></a>
+          <a class="nav-link active" href="/user/login"> <b>logIn</b></a>
+          <%}else{ %>
+            <a class="nav-link" href="/user/logOut"> <b>logOut</b></a>
+         <% } %>
+          
+        </div>
+      </div>
+    </div>
+    
+    
+  </nav>
