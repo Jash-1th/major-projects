@@ -25,7 +25,7 @@ A user-friendly web application for location-based property search, featuring in
 ## Installation
 
 # Clone the repository:
-git clone https://github.com/your-username/wanderlust.git  
+git clone https://github.com/Jash-1th/major-projects
 
 # Install dependencies:
 cd wanderlust  
