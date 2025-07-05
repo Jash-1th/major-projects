@@ -11,10 +11,10 @@ A user-friendly web application for location-based property search, featuring in
 -> CRUD Operations – Create, Read, Update, and Delete listings with a seamless user interface.
 
 ## Technologies Used
-Frontend: HTML5, CSS3, JavaScript, Bootstrap
-Backend: Node.js, Express.js
-Database: MongoDB
-APIs: Google Maps API
+1) Frontend: HTML5, CSS3, JavaScript, Bootstrap
+2) Backend: Node.js, Express.js
+3) Database: MongoDB
+4) APIs: Google Maps API
 
 ## Getting Started
 # Prerequisites
