@@ -1,8 +1,6 @@
 
 const mongoose = require("mongoose");
 const Review = require("./review.js");
-const { string } = require("joi");
-
 const ListingSchema = new mongoose.Schema({
     title :{
         type: String,
@@ -25,7 +23,6 @@ const ListingSchema = new mongoose.Schema({
         type: Number,
        
         min : 100
-
     },
     location :{
         type: String,
@@ -65,9 +62,9 @@ const ListingSchema = new mongoose.Schema({
 })
 
 ListingSchema.post("findOneAndDelete" , async(listing)=>{
-    console.log("in deletedList",listing);
+
     if(listing){
-        console.log("i am inside it")
+        
         await Review.deleteMany({_id : {$in : listing.reviews}})
     }
 })
