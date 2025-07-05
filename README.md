@@ -32,7 +32,6 @@ cd wanderlust
 npm install  
 
 # Set up environment variables (create a .env file):
-env
 MONGODB_URI=your_mongodb_connection_string  
 MAPS_API_KEY=your_google_maps_api_key  
 SECRET=your_session_secret_key  
