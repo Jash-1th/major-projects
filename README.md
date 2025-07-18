@@ -29,7 +29,7 @@ git clone https://github.com/Jash-1th/major-projects
 
 # Install dependencies:
 cd wanderlust  
-npm install  
+node 
 
 # Set up environment variables (create a .env file):
 MONGODB_URI=your_mongodb_connection_string  
@@ -37,7 +37,8 @@ MAPS_API_KEY=your_google_maps_api_key
 SECRET=your_session_secret_key  
 
 # Start the server:
-npm start  
+node app.js
+
 
 # Open your browser and navigate to:
 http://localhost:3000/listings  
